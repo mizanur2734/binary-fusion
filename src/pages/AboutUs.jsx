@@ -1,7 +1,9 @@
 import React from "react";
 import man1 from "../assets/about/who_are_we.png";
 import man2 from "../assets/about/who_are_we-2.png";
-import man3 from "../assets/about/who_are_we-3.png"
+import man3 from "../assets/about/who_are_we-3.png";
+import man4 from "../assets/about/bulbul-ahmed.jpg";
+import man5 from "../assets/about/bulbul-ahmed.png";
 
 const AboutUs = () => {
   return (
@@ -44,7 +46,7 @@ const AboutUs = () => {
           </div>
           {/* Text */}
           <div className="lg:max-w-[600px]">
-            <h2 className="lg:text-4xl text-3xl font-bold leading-12">
+            <h2 className="lg:text-4xl text-3xl font-bold lg:leading-12">
               Making Your Work <br className="block lg:hidden" />
               <span className="text-green-600">
                 Easier, <br className="hidden lg:block" /> Together!
@@ -66,7 +68,7 @@ const AboutUs = () => {
         <div className="flex flex-col md:flex-row items-center justify-between lg:gap-40 gap-10 lg:mt-26 mt-8">
           {/* Text */}
           <div className="lg:max-w-[600px]">
-            <h2 className="lg:text-4xl text-3xl font-bold leading-12">
+            <h2 className="lg:text-4xl text-3xl font-bold lg:leading-12">
               Growing Together,
               <br className="hidden lg:block" />
               <span className="text-green-600"> Building the Future!</span>
@@ -83,6 +85,36 @@ const AboutUs = () => {
           {/* Image */}
           <div className="lg:max-w-[500px] mt-6 md:mt-0">
             <img src={man3} alt="" className="w-full h-auto" />
+          </div>
+        </div>
+      </section>
+      {/* 4 */}
+      <section>
+        <div className="flex flex-col md:flex-row items-center justify-between lg:gap-40 gap-10 lg:mt-26 mt-8">
+            {/* Image */}
+          <div className="lg:max-w-[500px] mt-6 md:mt-0">
+            <img src={man4} alt="" className="w-full h-auto" />
+          </div>
+          {/* Text */}
+          <div className="lg:max-w-[600px]">
+            <h2 className="lg:text-4xl text-3xl font-bold lg:leading-12">
+              The <span className="text-green-600">Leadershipe!</span> We Follow
+              <br className="hidden lg:block" />
+            </h2>
+
+            <p className="lg:text-xl text-lg lg:mt-10 mt-8 opacity-60">
+              At Binary Fusion, we're obsessed with making awesome software!
+              That's because I'm a design perfectionist and want my clients to
+              have the best. But don't worry; I have a fantastic team that can
+              handle anything. We build websites, apps and even design the way
+              they look and feel, all customized just for you. My only goal is
+              to make you happy and that's something we'll never compromise on.
+              So ditch the compromises and join us! Let's build something truly
+              amazing together!
+            </p>
+               <img className="mt-6" src={man5} alt="" />
+               <h4 className="mt-4 text-xl font-bold">Bulbul Ahmed</h4>
+               <h5 className="text-lg font-bold opacity-70">Founder & CEO, Binary Fusion</h5>
           </div>
         </div>
       </section>
