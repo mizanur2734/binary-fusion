@@ -8,6 +8,7 @@ import man6 from "../assets/about/youth.png";
 import man7 from "../assets/about/adaptation.png";
 import man8 from "../assets/about/help.png";
 import man9 from "../assets/about/chatting.png";
+import CountUp from "react-countup";
 
 const AboutUs = () => {
   return (
@@ -184,6 +185,64 @@ const AboutUs = () => {
                 other out and reach our goals. That’s our biggest strength!
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="lg:mt-26 mt-16">
+        <div className="">
+          <div className="text-center">
+            <h2 className="lg:text-4xl text-3xl font-bold text-center lg:mb-12 mb-6">
+              Our<span className="text-green-600">Achievements</span>
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4 lg:mt-6">
+            {/* 1 */}
+            <div className="lg:p-6 p-3">
+              <h2 className="text-5xl text-blue-600 mt-2">
+                <CountUp end={100} enableScrollSpy scrollSpyDelay={1} />+
+              </h2>
+              <p className="text-lg ml-2 mt-1 text-[#0F0F0F99]">
+                Total Projects
+              </p>
+            </div>
+            {/* 2 */}
+            <div className="lg:p-6 p-3">
+              <h2 className="text-5xl mt-2 text-green-600">
+                <CountUp end={17} enableScrollSpy scrollSpyDelay={1} />+
+              </h2>
+              <p className="text-lg mt-1 text-[#0F0F0F99]">Total Clients</p>
+            </div>
+            {/* 3 */}
+            <div className="lg:p-6 p-3">
+              <h2 className="text-5xl mt-2 text-green-600">
+                <CountUp end={50} enableScrollSpy scrollSpyDelay={1} />
+                K+
+              </h2>
+              <p className="text-lg ml-2 mt-1 text-[#0F0F0F99]">Total Hours</p>
+            </div>
+            {/* 4 */}
+            <div className="lg:p-6 p-3">
+              <h2 className="text-5xl mt-2 text-pink-400">
+                <CountUp end={90} enableScrollSpy scrollSpyDelay={1} />
+                K+
+              </h2>
+              <p className="text-lg mt-1 text-[#0F0F0F99]">Total Coffee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="lg:mt-26 mt-16">
+        <div>
+          <h2 className="lg:text-4xl text-3xl font-bold text-center mb-4">
+            Introducing the People
+            <span className="text-green-600">Behind the Magic</span>
+          </h2>
+          <p className="text-center text-lg opacity-65">
+            Ever wonder who's behind all this cool stuff? Check out our awesome
+            team! They're the secret sauce to our success.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-4 lg:mt-12 mt-6">
+          
           </div>
         </div>
       </section>
