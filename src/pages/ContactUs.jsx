@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Loading from "../components/Loading";
 import man1 from "../assets/contact/contact2.png";
 import man2 from "../assets/contact/contact-1.png";
 import { MdCall } from "react-icons/md";
 const ContactUs = () => {
+     const [loading, setLoading] = useState(true);
+        useEffect(() => {
+        setTimeout(() => {
+          setLoading(false); 
+        }, 1000); 
+      }, []);
+        if(loading){
+            return <Loading  />
+        }
   return (
     <div className="container mx-auto px-4 lg:px-0">
       {/* 1 */}
       <section className="lg:py-16 py-8 ">
         <div className="flex flex-col md:flex-row items-center justify-between lg:gap-40 gap-10 mt-6">
           {/* Text */}
-          <div className="lg:max-w-[700px]">
+          <div data-aos="fade-up" data-aos-duration="2000" className="lg:max-w-[700px]">
             <h1 className="lg:text-5xl text-3xl font-bold lg:leading-12">
               We're Here to Help
             </h1>
@@ -92,19 +102,19 @@ const ContactUs = () => {
                   <input
                     type="text"
                     placeholder="Name"
-                    class="w-full bg-[#fffafa] border border-gray-200 rounded-full px-6 py-5 focus:outline-none"
+                    class="w-full bg-[#fffafa] border border-gray-200 rounded-full px-6 py-5 focus:outline-none hover:bg-white"
                   />
                   <input
                     type="email"
                     placeholder="Email"
-                    class="w-full bg-[#fffafa] border border-gray-200 rounded-full px-6 py-5 focus:outline-none"
+                    class="w-full bg-[#fffafa] border border-gray-200 rounded-full px-6 py-5 focus:outline-none hover:bg-white"
                   />
                 </div>
 
                 <input
                   type="text"
                   placeholder="Subject"
-                  class="w-full bg-[#fffafa] border border-gray-200 rounded-full px-6 py-5 focus:outline-none"
+                  class="w-full bg-[#fffafa] border border-gray-200 rounded-full px-6 py-5 focus:outline-none hover:bg-white"
                 />
 
                 <textarea
