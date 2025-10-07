@@ -1,5 +1,6 @@
 import React from "react";
 import man1 from "../assets/contact/contact2.png";
+import man2 from "../assets/contact/contact-1.png";
 import { MdCall } from "react-icons/md";
 const ContactUs = () => {
   return (
@@ -32,7 +33,8 @@ const ContactUs = () => {
           <div className="bg-[#28a745] p-10 rounded-md">
             <h3 className="text-3xl font-semibold text-white">Main Office</h3>
             <p className="text-white leading-7 mt-3 text-lg">
-              House#31, Road#1, Block#B, <br className="block lg:hidden" /> Aftab <br className="lg:block hidden"/> Nagar, Dhaka -1212,
+              House#31, Road#1, Block#B, <br className="block lg:hidden" />{" "}
+              Aftab <br className="lg:block hidden" /> Nagar, Dhaka -1212,
               Bangladesh
             </p>
             <div className="flex items-center mt-[10px] gap-2">
@@ -48,7 +50,10 @@ const ContactUs = () => {
               Australia Office
             </h3>
             <p className="text-white leading-7 mt-3 text-lg">
-              7A Narooma Street, Gregory<br className="lg:hidden block" />Hills,<br />
+              7A Narooma Street, Gregory
+              <br className="lg:hidden block" />
+              Hills,
+              <br />
               NSW, Post Code: 2557, Australia
             </p>
             <div className="flex items-center mt-[10px] gap-2">
@@ -67,9 +72,57 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-      <section>
-        
-      </section>
+      {/* contact form */}
+        <section class="lg:py-16 py-8">
+          <div className="container mx-auto flex flex-col md:flex-row items-start justify-center gap-10 bg-white">
+            <div class="md:w-1/2 ">
+              <h3 className="lg:text-4xl text-3xl font-semibold text-center mb-2">
+               Start a Conversation
+              </h3>
+              <img
+                src={man2}
+                alt="Contact Illustration"
+                class="w-[400px] md:w-[500px] h-auto"
+              />
+            </div>
+
+            <div class="md:w-2/3">
+              <form class="space-y-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="w-full bg-[#fffafa] border border-gray-200 rounded-full px-6 py-5 focus:outline-none"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="w-full bg-[#fffafa] border border-gray-200 rounded-full px-6 py-5 focus:outline-none"
+                  />
+                </div>
+
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  class="w-full bg-[#fffafa] border border-gray-200 rounded-full px-6 py-5 focus:outline-none"
+                />
+
+                <textarea
+                  rows="7"
+                  placeholder="Your Comment"
+                  class="w-full border bg-[#fffafa] border-gray-200 rounded-3xl px-6 py-5 focus:outline-none hover:bg-white"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="bg-green-600 hover:bg-green-700 shadow-[0px_20px_30px_rgba(18,191,124,0.3)] hover:shadow-none text-white font-semibold py-4 px-9 rounded-full transition duration-200"
+                >
+                  Send Your Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
     </div>
   );
 };
