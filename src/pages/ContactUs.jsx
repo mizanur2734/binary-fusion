@@ -14,7 +14,7 @@ const ContactUs = () => {
             return <Loading  />
         }
   return (
-    <div className="container mx-auto px-4 lg:px-0">
+    <div className="container mx-auto px-4 lg:px-12">
       {/* 1 */}
       <section className="lg:py-16 py-8 lg:mt-20 mt-14">
         <div className="flex flex-col md:flex-row items-center justify-between lg:gap-40 gap-10 mt-6">
