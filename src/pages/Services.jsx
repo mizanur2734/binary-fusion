@@ -19,7 +19,10 @@ import FoodOrdering from "../assets/services/areas-img/food-order.png";
 import Consultation from "../assets/services/areas-img/consultation.png";
 import ManyMore from "../assets/services/areas-img/many-more.png";
 // project journey image
-import projectJourney from "../assets/services/areas-img/project-management-steps.png";
+import projectJourney from "../assets/services/contact-img/cta-bg.jpg";
+// bg image
+import bgImage1 from "../assets/services/contact-img/project-management-steps-mobile.png";
+import bgImage2 from "../assets/services/contact-img/project-management-steps.png";
 const Services = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -104,7 +107,7 @@ const Services = () => {
     { id: 4, title: "On Demand", img: OnDemand },
     { id: 5, title: "Education", img: Education },
     { id: 6, title: "Real-Estate", img: RealEstate },
-    { id: 7, title: "UI/UX", img:  UiUx},
+    { id: 7, title: "UI/UX", img: UiUx },
     { id: 8, title: "Food Ordering", img: FoodOrdering },
     { id: 9, title: "Consultation", img: Consultation },
     { id: 10, title: "Many More", img: ManyMore },
@@ -198,33 +201,70 @@ const Services = () => {
       </section>
       {/* Areas of Expertise */}
       <section className="bg-[#F0F7EF] py-8 lg:py-16 px-4 lg:px-10">
-        <h2 className="lg:text-4xl text-3xl font-bold text-center">
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="lg:text-4xl text-3xl font-bold text-center"
+        >
           <span className="text-green-600">Our Areas </span>
           {/* <br className="hidden" /> */}
           of Expertise
         </h2>
         {/*  */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 p-4 mt-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 lg:gap-8 lg:p-4 mt-8">
           {cards.map((card) => (
             <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
               key={card.id}
               className="flex flex-col items-center justify-center p-8  bg-white rounded-2xl hover:bg-green-500 overflow-hidden transition-colors duration-700 ease-in-out"
             >
               <img src={card.img} className="w-12 mb-3" alt={card.title} />
-              <h4 className="text-xl opacity-75 text-center group-hover:text-white">
+              <h4 className="lg:text-xl opacity-75 text-center group-hover:text-white">
                 {card.title}
               </h4>
             </div>
           ))}
         </div>
-      </section> 
-      <section className="py-16 px-4 lg:px-12">
-        <h2 className="lg:text-4xl text-3xl text-center font-bold lg:mt-6 mb-18">
-            <span className="text-green-600">The Journey of </span>
-            {/* <br className="hidden" /> */}
-            Your Project
-          </h2>
-          <img src={projectJourney} alt="" />
+      </section>
+      {/* project  */}
+      <section className=" mt-10 lg:py-16 lg:mt-6 lg:px-12">
+        {/* mobile device */}
+         <h2
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="lg:text-4xl text-3xl font-bold text-center lg:mb-16"
+        >
+          <span className="text-green-600">The Journey of </span>
+          {/* <br className="hidden" /> */}
+          Your Project
+        </h2>
+        <img data-aos="fade-up"
+          data-aos-duration="2000" className="hidden lg:block" src={bgImage2} alt="" />
+         {/* desktop device */}
+       <img data-aos="fade-up"
+          data-aos-duration="2000" className="block lg:hidden" src={bgImage1} alt="" />
+      </section>
+      {/* card */}
+      <section className="mt-6 lg:px-12 lg:mb-20">
+        <div
+          className="w-full h-[350px] bg-cover bg-center relative"
+          style={{ backgroundImage: `url(${projectJourney})` }}
+        >
+          {/* Overlay */}
+          <div className="absolute"></div>
+
+          {/* Content */}
+          <div className="relative z-10 flex flex-col items-center justify-center h-full">
+            <h1 className="text-black text-3xl md:text-5xl font-bold text-center mb-20">
+              Tell Us Yours Needs.{" "}
+              <span className="text-green-500">We're Ready!</span>
+            </h1>
+            <button className="bg-green-600 hover:bg-green-700 shadow-[0px_20px_30px_rgba(18,191,124,0.3)] hover:shadow-none text-white font-semibold py-4 px-9 rounded-full transition duration-200">
+              Hire Us Now
+            </button>
+          </div>
+        </div>
       </section>
     </div>
   );
