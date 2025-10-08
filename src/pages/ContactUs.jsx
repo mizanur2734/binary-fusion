@@ -16,7 +16,7 @@ const ContactUs = () => {
   return (
     <div className="container mx-auto px-4 lg:px-0">
       {/* 1 */}
-      <section className="lg:py-16 py-8 ">
+      <section className="lg:py-16 py-8 lg:mt-20 mt-14">
         <div className="flex flex-col md:flex-row items-center justify-between lg:gap-40 gap-10 mt-6">
           {/* Text */}
           <div data-aos="fade-up" data-aos-duration="2000" className="lg:max-w-[700px]">
@@ -31,7 +31,7 @@ const ContactUs = () => {
           </div>
 
           {/* Image */}
-          <div className="lg:max-w-[500px] mt-6 md:mt-0">
+          <div data-aos="fade-left" data-aos-duration="2000" className="lg:max-w-[500px] mt-6 md:mt-0">
             <img src={man1} alt="" className="w-full h-auto" />
           </div>
         </div>
@@ -40,7 +40,7 @@ const ContactUs = () => {
       <section className="lg:py-16 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:mt-2">
           {/* card 1 */}
-          <div className="bg-[#28a745] p-10 rounded-md">
+          <div data-aos="fade-up" data-aos-duration="2000" className="bg-[#28a745] p-10 rounded-md">
             <h3 className="text-3xl font-semibold text-white">Main Office</h3>
             <p className="text-white leading-7 mt-3 text-lg">
               House#31, Road#1, Block#B, <br className="block lg:hidden" />{" "}
@@ -55,7 +55,7 @@ const ContactUs = () => {
             </div>
           </div>
           {/* card 2 */}
-          <div className="bg-[#6c757d] p-10 rounded-md">
+          <div data-aos="fade-up" data-aos-duration="2000"  className="bg-[#6c757d] p-10 rounded-md">
             <h3 className="text-3xl font-semibold text-white">
               Australia Office
             </h3>
@@ -74,7 +74,7 @@ const ContactUs = () => {
             </div>
           </div>
           {/* card 3 */}
-          <div className="bg-[#17a2b8] p-10 rounded-md">
+          <div data-aos="fade-up" data-aos-duration="2000"  className="bg-[#17a2b8] p-10 rounded-md">
             <h3 className="text-3xl font-semibold text-white">USA Office</h3>
             <p className="text-white leading-7 mt-3 text-lg">
               695 Mansell Rd, Ste. 230, <br /> Roswell, GA 30076, <br /> U.S.A.
@@ -84,19 +84,19 @@ const ContactUs = () => {
       </section>
       {/* contact form */}
         <section class="lg:py-16 py-8">
-          <div className="container mx-auto flex flex-col md:flex-row items-start justify-center gap-10 bg-white">
+          <div className="container mx-auto flex flex-col md:flex-row items-start justify-center gap-10 bg-white lg:mt-12">
             <div class="md:w-1/2 ">
-              <h3 className="lg:text-4xl text-3xl font-semibold text-center mb-2">
+              <h3 data-aos="fade-up" data-aos-duration="2000" className="lg:text-4xl text-3xl font-semibold text-center mb-2">
                Start a Conversation
               </h3>
-              <img
+              <img data-aos="fade-left" data-aos-duration="2000"
                 src={man2}
                 alt="Contact Illustration"
                 class="w-[400px] md:w-[500px] h-auto"
               />
             </div>
 
-            <div class="md:w-2/3">
+            <div data-aos="fade-up" data-aos-duration="2000" class="md:w-2/3">
               <form class="space-y-5">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input

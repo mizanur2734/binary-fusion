@@ -1,4 +1,7 @@
 import React from "react";
+import Loading from "../components/Loading";
+import { useEffect, useState } from "react";
+// images for about us
 import man1 from "../assets/about/who_are_we.png";
 import man2 from "../assets/about/who_are_we-2.png";
 import man3 from "../assets/about/who_are_we-3.png";
@@ -21,13 +24,26 @@ import CountUp from "react-countup";
 import "./AboutUs.css";
 
 const AboutUs = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <div className="container mx-auto px-4 lg:px-0">
       {/* 1 */}
-      <section>
+      <section className="lg:mt-40 mt-28">
         <div className="flex flex-col md:flex-row items-center justify-between lg:gap-40 gap-10">
           {/* Text */}
-          <div className="lg:max-w-[600px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:max-w-[600px]"
+          >
             <h2 className="lg:text-4xl text-3xl font-bold lg:leading-12">
               We Develop Sustainable
               <br className="hidden lg:block" />
@@ -47,7 +63,11 @@ const AboutUs = () => {
           </div>
 
           {/* Image */}
-          <div className="lg:max-w-[500px] mt-6 md:mt-0">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:max-w-[500px] mt-6 md:mt-0"
+          >
             <img src={man1} alt="" className="w-full h-auto" />
           </div>
         </div>
@@ -56,11 +76,19 @@ const AboutUs = () => {
       <section>
         <div className="flex flex-col-reverse md:flex-row justify-between lg:gap-40 gap-10 lg:mt-24 mt-8">
           {/* Image */}
-          <div className="lg:max-w-[500px] mt-6 md:mt-0">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:max-w-[500px] mt-6 md:mt-0"
+          >
             <img src={man2} alt="" className="w-full h-auto" />
           </div>
           {/* Text */}
-          <div className="lg:max-w-[600px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:max-w-[600px]"
+          >
             <h2 className="lg:text-4xl text-3xl font-bold lg:leading-12">
               Making Your Work <br className="block lg:hidden" />
               <span className="text-green-600">
@@ -82,7 +110,11 @@ const AboutUs = () => {
       <section>
         <div className="flex flex-col md:flex-row items-center justify-between lg:gap-40 gap-10 lg:mt-20 mt-8">
           {/* Text */}
-          <div className="lg:max-w-[600px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:max-w-[600px]"
+          >
             <h2 className="lg:text-4xl text-3xl font-bold lg:leading-12">
               Growing Together,
               <br className="hidden lg:block" />
@@ -98,7 +130,11 @@ const AboutUs = () => {
           </div>
 
           {/* Image */}
-          <div className="lg:max-w-[500px] mt-6 md:mt-0">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:max-w-[500px] mt-6 md:mt-0"
+          >
             <img src={man3} alt="" className="w-full h-auto" />
           </div>
         </div>
@@ -107,11 +143,19 @@ const AboutUs = () => {
       <section>
         <div className="flex flex-col md:flex-row items-center justify-between lg:gap-40 gap-10 lg:mt-30 mt-8">
           {/* Image */}
-          <div className="lg:max-w-[500px] mt-6 md:mt-0">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:max-w-[500px] mt-6 md:mt-0"
+          >
             <img src={man4} alt="" className="w-full h-auto" />
           </div>
           {/* Text */}
-          <div className="lg:max-w-[600px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:max-w-[600px]"
+          >
             <h2 className="lg:text-4xl text-3xl font-bold lg:leading-12">
               The <span className="text-green-600">Leadershipe!</span> We Follow
               <br className="hidden lg:block" />
@@ -138,14 +182,22 @@ const AboutUs = () => {
       {/* 5 */}
       <section className="lg:mt-26 mt-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="lg:text-4xl text-3xl font-bold text-center mb-10">
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:text-4xl text-3xl font-bold text-center mb-10"
+          >
             We <span className="text-green-600">Dream Big</span> But Act with{" "}
             <span className="text-green-600">Honesty</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-cente mt-20 lg:space-y-17 space-y-12">
             {/* Card 1 */}
-            <div className="flex flex-col items-center text-center max-w-lg">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              className="flex flex-col items-center text-center max-w-lg"
+            >
               <img src={man6} className="h-20 mb-4" alt="man1" />
               <h4 className="text-[22px] font-semibold mb-2 opacity-80">
                 Seeing the Human Side of Business
@@ -158,7 +210,11 @@ const AboutUs = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="flex flex-col items-center text-center max-w-lg">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              className="flex flex-col items-center text-center max-w-lg"
+            >
               <img src={man7} className="h-20 mb-4" alt="man2" />
               <h4 className="text-[22px] font-semibold mb-2 opacity-80">
                 Seeing the Human Side of Business
@@ -171,7 +227,11 @@ const AboutUs = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="flex flex-col items-center text-center max-w-lg">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              className="flex flex-col items-center text-center max-w-lg"
+            >
               <img src={man8} className="h-20 mb-4" alt="man3" />
               <h4 className="text-[22px] font-semibold mb-2 opacity-80">
                 Seeing the Human Side of Business
@@ -184,7 +244,11 @@ const AboutUs = () => {
             </div>
 
             {/* Card 4 */}
-            <div className="flex flex-col items-center text-center max-w-lg">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              className="flex flex-col items-center text-center max-w-lg"
+            >
               <img src={man9} className="h-20 mb-4" alt="man4" />
               <h4 className="text-[22px] font-semibold mb-2 opacity-80">
                 Seeing the Human Side of Business
@@ -201,27 +265,43 @@ const AboutUs = () => {
       {/* 6 */}
       <section className="lg:mt-26 mt-16">
         <div className="text-center">
-          <h2 className="lg:text-4xl text-3xl font-bold text-center lg:mb-12 mb-6">
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:text-4xl text-3xl font-bold text-center lg:mb-12 mb-6"
+          >
             Our<span className="text-green-600">Achievements</span>
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4 lg:mt-6">
           {/* 1 */}
-          <div className="lg:p-6 p-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:p-6 p-3"
+          >
             <h2 className="text-5xl text-blue-600 mt-2">
               <CountUp end={100} enableScrollSpy scrollSpyDelay={1} />+
             </h2>
             <p className="text-lg ml-2 mt-1 text-[#0F0F0F99]">Total Projects</p>
           </div>
           {/* 2 */}
-          <div className="lg:p-6 p-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:p-6 p-3"
+          >
             <h2 className="text-5xl mt-2 text-green-600">
               <CountUp end={17} enableScrollSpy scrollSpyDelay={1} />+
             </h2>
             <p className="text-lg mt-1 text-[#0F0F0F99]">Total Clients</p>
           </div>
           {/* 3 */}
-          <div className="lg:p-6 p-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:p-6 p-3"
+          >
             <h2 className="text-5xl mt-2 text-green-600">
               <CountUp end={50} enableScrollSpy scrollSpyDelay={1} />
               K+
@@ -229,7 +309,11 @@ const AboutUs = () => {
             <p className="text-lg ml-2 mt-1 text-[#0F0F0F99]">Total Hours</p>
           </div>
           {/* 4 */}
-          <div className="lg:p-6 p-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="lg:p-6 p-3"
+          >
             <h2 className="text-5xl mt-2 text-pink-400">
               <CountUp end={90} enableScrollSpy scrollSpyDelay={1} />
               K+
@@ -241,17 +325,19 @@ const AboutUs = () => {
       {/* 7 */}
       <section className="lg:mt-26 mt-16 mb-20 m-0">
         <div>
-          <h2 className="lg:text-4xl text-3xl font-bold text-center mb-4">
-            Introducing the People
-            <span className="text-green-600">Behind the Magic</span>
-          </h2>
-          <p className="text-center text-lg opacity-65">
-            Ever wonder who's behind all this cool stuff? Check out our awesome
-            team! They're the secret sauce to our success.
-          </p>
+          <div data-aos="fade-up" data-aos-duration="2000">
+            <h2 className="lg:text-4xl text-3xl font-bold text-center mb-4">
+              Introducing the People
+              <span className="text-green-600">Behind the Magic</span>
+            </h2>
+            <p className="text-center text-lg opacity-65">
+              Ever wonder who's behind all this cool stuff? Check out our
+              awesome team! They're the secret sauce to our success.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-16 mt-6 mb-14 gap-8 lg:gap-1 lg:space-y-16">
             {/* card 1 */}
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -274,7 +360,7 @@ const AboutUs = () => {
             </div>
 
             {/* card 2 */}
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -297,7 +383,7 @@ const AboutUs = () => {
             </div>
 
             {/* card 3 */}
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -321,7 +407,7 @@ const AboutUs = () => {
             </div>
 
             {/* card 4 */}
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
               <div className="flip-card">
                 <div className="flip-card-inner flip-img">
                   <div className="flip-card-front">
@@ -342,7 +428,7 @@ const AboutUs = () => {
             </div>
 
             {/* card 5 */}
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -363,7 +449,7 @@ const AboutUs = () => {
             </div>
 
             {/* card 6 */}
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -384,7 +470,7 @@ const AboutUs = () => {
             </div>
 
             {/* card 7 */}
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -405,7 +491,7 @@ const AboutUs = () => {
             </div>
 
             {/* card 8 */}
-            <div className="flex flex-col items-center">
+            <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">

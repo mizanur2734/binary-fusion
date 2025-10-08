@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="grid lg:px-12 px-6 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white">
         {/* 1 */}
         <div>
-          <h2 className="text-4xl font-semibold min-h-[50px]">
+          <h2 className="text-4xl font-bold min-h-[50px]">
             <span className="text-green-600">B</span>inary{" "}
             <span className="text-green-600">f</span>usion
           </h2>
