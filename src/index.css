@@ -9,7 +9,6 @@
   font-style: normal;
 }
 
-
     .expertise-item::after {
     position: absolute;
     width: 100%;
@@ -25,4 +24,8 @@
     background-position: 0%;
     background-size: 680px;
     background-repeat: no-repeat;
+}
+
+.title{
+  color: white; 
 }

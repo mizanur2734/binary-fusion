@@ -23,6 +23,7 @@ import projectJourney from "../assets/services/contact-img/cta-bg.jpg";
 // bg image
 import bgImage1 from "../assets/services/contact-img/project-management-steps-mobile.png";
 import bgImage2 from "../assets/services/contact-img/project-management-steps.png";
+import { Link } from "react-router";
 const Services = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -260,9 +261,9 @@ const Services = () => {
               Tell Us Yours Needs.{" "}
               <span className="text-green-500">We're Ready!</span>
             </h1>
-            <button className="bg-green-600 hover:bg-green-700 shadow-[0px_20px_30px_rgba(18,191,124,0.3)] hover:shadow-none text-white font-semibold py-4 px-9 rounded-full transition duration-200">
-              Hire Us Now
-            </button>
+            <Link to={"/contactUs"} className="bg-green-600 hover:bg-green-700 shadow-[0px_20px_30px_rgba(18,191,124,0.3)] hover:shadow-none text-white font-semibold py-4 px-12 rounded-full transition duration-200">
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>

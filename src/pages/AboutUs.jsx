@@ -21,7 +21,10 @@ import man15 from "../assets/about/sobujnew.jpg";
 import man16 from "../assets/about/muhsin-azmal.jpg";
 import man17 from "../assets/about/masud-rana.jpg";
 import CountUp from "react-countup";
+// project journey image
+import projectJourney from "../assets/services/contact-img/cta-bg.jpg";
 import "./AboutUs.css";
+import { Link } from "react-router";
 
 const AboutUs = () => {
   const [loading, setLoading] = useState(true);
@@ -323,7 +326,7 @@ const AboutUs = () => {
         </div>
       </section>
       {/* 7 */}
-      <section className="lg:mt-26 mt-16 mb-20 m-0">
+      <section className="lg:mt-26 mt-16 mb-15 m-0">
         <div>
           <div data-aos="fade-up" data-aos-duration="2000">
             <h2 className="lg:text-4xl text-3xl font-bold text-center mb-4">
@@ -335,7 +338,7 @@ const AboutUs = () => {
               awesome team! They're the secret sauce to our success.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-16 mt-6 mb-14 gap-8 lg:gap-1 lg:space-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-16 mt-6 mb-14 gap-8 lg:space-y-16">
             {/* card 1 */}
             <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col items-center">
               <div className="flip-card">
@@ -513,6 +516,28 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      {/* card */}
+      <section className="mt-6 lg:mb-20">
+              <div
+                className="w-full h-[350px] bg-cover bg-center relative"
+                style={{ backgroundImage: `url(${projectJourney})` }}
+              >
+                {/* Overlay */}
+                <div className="absolute"></div>
+      
+                {/* Content */}
+                <div className="relative z-10 flex flex-col items-center justify-center h-full">
+                  <h1 className="text-black text-3xl md:text-5xl font-bold text-center mb-20">
+                    Have Any Idea?{" "}
+                    <span className="text-green-500">Hire Us Today</span>
+                  </h1>
+                  <Link to={"/contactUs"} className="bg-green-600 hover:bg-green-700 shadow-[0px_20px_30px_rgba(18,191,124,0.3)] hover:shadow-none
+                   text-white font-semibold py-4 px-12 rounded-full transition duration-200">
+                    Contact Now
+                  </Link>
+                </div>
+              </div>
+            </section>
     </div>
   );
 };
