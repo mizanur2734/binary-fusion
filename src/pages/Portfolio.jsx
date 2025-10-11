@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import doshNetwork from "../assets/portfolio/dosh-network-portfolio-bg.jpg";
 import tRanze from "../assets/portfolio/t-ranz-portfolio-bg.jpg";
 import doshEats from "../assets/portfolio/dosh-eats-portfolio-bg.jpg";
@@ -10,12 +10,23 @@ import trashyTenant from "../assets/portfolio/trashy-tenant-bg.jpg";
 import yahooeatst from "../assets/portfolio/yahooeats-bg.jpg";
 import driveways from "../assets/portfolio/driveways-bg.jpg";
 import pediatric from "../assets/portfolio/pediatric-bg.jpg";
+import Loading from "../components/Loading";
 
 const Portfolio = () => {
+    const [loading, setLoading] = useState(true);
+      useEffect(() => {
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
+      }, []);
+      if (loading) {
+        return <Loading />;
+      }
   return (
     <div>
       <section className="container mx-auto px-4 lg:px-12">
-        <div className="lg:mt-28 mt-26">
+        <div data-aos="fade-up"
+              data-aos-duration="2000" className="lg:mt-28 mt-26">
           <h2 className="text-black text-[28px] md:text-[42px] font-bold mb-3 leading-9">
             <span className="text-green-500">See Our Works</span>- Imagine{" "}
             <br className="lg:hidden block" /> Yours
@@ -25,7 +36,8 @@ const Portfolio = () => {
             projects.
           </p>
           {/* Dosh-Network-card-1 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-6"
             style={{ backgroundImage: `url(${doshNetwork})` }}
           >
@@ -53,7 +65,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* T-Range-card-2 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
             style={{ backgroundImage: `url(${tRanze})` }}
           >
@@ -81,7 +94,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Dosh-Eath-card-3 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
             style={{ backgroundImage: `url(${doshEats})` }}
           >
@@ -109,7 +123,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Is-Cholaris-card-4 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
             style={{ backgroundImage: `url(${isCholaris})` }}
           >
@@ -137,7 +152,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Can-ViarDynasty-card-5 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
             style={{ backgroundImage: `url(${canviarDynasty})` }}
           >
@@ -165,7 +181,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Nstn-Portfolio-card-6 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
             style={{ backgroundImage: `url(${nstnPortfolio})` }}
           >
@@ -193,7 +210,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Real-Bex-card-7 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
             style={{ backgroundImage: `url(${realBex})` }}
           >
@@ -221,7 +239,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* Trashy-Tenant-card-8 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
             style={{ backgroundImage: `url(${trashyTenant})` }}
           >
@@ -249,7 +268,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* yahooeatst-card-9 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
             style={{ backgroundImage: `url(${yahooeatst})` }}
           >
@@ -277,7 +297,8 @@ const Portfolio = () => {
             </div>
           </div>
           {/* yahooeatst-card-10 */}
-          <div
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
             className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
             style={{ backgroundImage: `url(${driveways})` }}
           >
@@ -305,8 +326,9 @@ const Portfolio = () => {
             </div>
           </div>
           {/* yahooeatst-card-11 */}
-          <div
-            className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4"
+          <div data-aos="fade-up"
+              data-aos-duration="2000"
+            className="w-full h-[350px] md:h-[300px] bg-cover bg-center relative rounded-xl mt-4 mb-6 md:mb-12"
             style={{ backgroundImage: `url(${pediatric})` }}
           >
             {/* Overlay */}

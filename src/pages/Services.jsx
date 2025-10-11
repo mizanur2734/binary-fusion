@@ -117,7 +117,11 @@ const Services = () => {
   return (
     <div className="container mx-auto">
       <section className="lg:mt-36 mt-28 px-4 lg:px-12">
-        <div className="text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="text-center"
+        >
           <h2 className="lg:text-4xl text-3xl font-bold">
             <span className="text-green-600">Services </span>
             {/* <br className="hidden" /> */}
@@ -231,7 +235,7 @@ const Services = () => {
       {/* project  */}
       <section className=" mt-10 lg:py-16 lg:mt-6 lg:px-12">
         {/* mobile device */}
-         <h2
+        <h2
           data-aos="fade-up"
           data-aos-duration="2000"
           className="lg:text-4xl text-3xl font-bold text-center lg:mb-16"
@@ -240,11 +244,21 @@ const Services = () => {
           {/* <br className="hidden" /> */}
           Your Project
         </h2>
-        <img data-aos="fade-up"
-          data-aos-duration="2000" className="hidden lg:block" src={bgImage2} alt="" />
-         {/* desktop device */}
-       <img data-aos="fade-up"
-          data-aos-duration="2000" className="block lg:hidden" src={bgImage1} alt="" />
+        <img
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="hidden lg:block"
+          src={bgImage2}
+          alt=""
+        />
+        {/* desktop device */}
+        <img
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="block lg:hidden"
+          src={bgImage1}
+          alt=""
+        />
       </section>
       {/* card */}
       <section className="mt-6 lg:px-12 lg:mb-20">
@@ -261,7 +275,10 @@ const Services = () => {
               Tell Us Yours Needs.{" "}
               <span className="text-green-500">We're Ready!</span>
             </h1>
-            <Link to={"/contactUs"} className="bg-green-600 hover:bg-green-700 shadow-[0px_20px_30px_rgba(18,191,124,0.3)] hover:shadow-none text-white font-semibold py-4 px-12 rounded-full transition duration-200">
+            <Link
+              to={"/contactUs"}
+              className="bg-green-600 hover:bg-green-700 shadow-[0px_20px_30px_rgba(18,191,124,0.3)] hover:shadow-none text-white font-semibold py-4 px-12 rounded-full transition duration-200"
+            >
               Contact Us
             </Link>
           </div>

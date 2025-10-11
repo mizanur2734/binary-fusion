@@ -119,7 +119,8 @@ const Navbar = () => {
             {links}
           </div>
           {/* Right side */}
-          <button className="lg:block hidden bg-green-600 hover:bg-green-700 shadow-[0px_20px_30px_rgba(18,191,124,0.3)] hover:shadow-none text-white font-semibold py-4 px-9 rounded-full transition duration-200">
+          <button className="lg:block hidden bg-green-600 hover:bg-green-700
+           shadow-[0px_20px_30px_rgba(18,191,124,0.3)] hover:shadow-none text-white font-semibold py-[14px] px-9 rounded-full transition duration-200">
             Hire Us Now
           </button>
 
