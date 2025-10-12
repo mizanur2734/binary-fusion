@@ -6,7 +6,7 @@ import { MdCall, MdLocationPin } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-black py-20">
+    <div data-aos="fade-up" data-aos-duration="2000" className="bg-black py-20">
       <div className="grid lg:px-12 px-6 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white">
         {/* 1 */}
         <div>
@@ -90,8 +90,10 @@ const Footer = () => {
         <div className="w-full h-[1px] bg-white opacity-30"></div>
       </div>
       <p className="text-center lg:mt-10 mt-6">
-        <span className="text-xl text-white opacity-60 ">© 2025 All Rights Reserved by</span> 
-         <span className="text-green-600 text-[22px]"> Binary Fusion</span>
+        <span className="text-xl text-white opacity-60 ">
+          © 2025 All Rights Reserved by
+        </span>
+        <span className="text-green-600 text-[22px]"> Binary Fusion</span>
       </p>
     </div>
   );

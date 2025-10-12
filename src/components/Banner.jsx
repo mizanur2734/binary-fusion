@@ -46,7 +46,8 @@ const Banner = () => {
         </div>
 
         {/* Image */}
-        <div
+        <div data-aos="fade-up"
+          data-aos-duration="2000"
           className="w-full md:w-[600px] h-[400px] bg-cover bg-center relative rounded-2xl overflow-hidden"
           style={{ backgroundImage: `url(${banner})` }}
         >

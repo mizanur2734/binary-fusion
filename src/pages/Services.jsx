@@ -244,6 +244,7 @@ const Services = () => {
           {/* <br className="hidden" /> */}
           Your Project
         </h2>
+        {/* desktop device */}
         <img
           data-aos="fade-up"
           data-aos-duration="2000"
@@ -251,11 +252,11 @@ const Services = () => {
           src={bgImage2}
           alt=""
         />
-        {/* desktop device */}
-        <img
+        {/* mobile device */}
+          <img 
           data-aos="fade-up"
           data-aos-duration="2000"
-          className="block lg:hidden"
+          className="block h-30 lg:hidden "
           src={bgImage1}
           alt=""
         />
