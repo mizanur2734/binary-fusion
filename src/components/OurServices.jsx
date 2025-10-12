@@ -5,7 +5,7 @@ import img3 from "../assets/home/ourService/installation.svg";
 import img4 from "../assets/home/ourService/ui-ux.svg";
 const OurServices = () => {
   return (
-    <div className="md:py-16 py-8">
+    <div className="md:py-16 py-8 px-4 lg:px-12">
       <div data-aos="fade-up" data-aos-duration="2000">
         <h2 className="text-black text-[26px] md:text-[40px] text-center font-bold mb-3 leading-9">
           Experience

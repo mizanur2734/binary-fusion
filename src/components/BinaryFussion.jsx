@@ -3,7 +3,7 @@ import binaryFussion from "../assets/home/binaryFusion/world-wide.png";
 import dot from "../assets/home/binaryFusion/dot.png"
 const BinaryFussion = () => {
   return (
-    <div className="container mx-auto md:py-16 py-6 px-4">
+    <div className="container mx-auto md:py-16 py-6 px-4 lg:px-12">
   <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-36">
     {/* Image */}
     <div

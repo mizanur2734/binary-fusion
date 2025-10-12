@@ -28,7 +28,7 @@ const ProjectsShop = () => {
     { id: 7, bg: doshNetwork7, img: projectImage7 },
   ];
   return (
-    <div className="container mx-auto md:py-12 py-6">
+    <div className="container mx-auto md:py-12 py-6 px-4 lg:px-12">
       <h2
         data-aos="fade-up"
         data-aos-duration="2000"

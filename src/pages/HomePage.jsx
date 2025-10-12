@@ -7,7 +7,7 @@ import BinaryFussion from '../components/BinaryFussion';
 
 const HomePage = () => {
     return (
-        <div className='poppins-regular px-4 lg:px-12'>
+        <div className='poppins-regular'>
             <Banner/>
             <BinaryFussion/>
             <ProjectsShop/>

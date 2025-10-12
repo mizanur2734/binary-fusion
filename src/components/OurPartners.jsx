@@ -11,7 +11,7 @@ import img9 from "../assets/home/ourPartners/dato-comm.png";
 import img10 from "../assets/home/ourPartners/ecualerta.png";
 const OurPartners = () => {
   return (
-    <div className="container mx-auto md:py-16 py-6 md:mb-6">
+    <div className="container mx-auto md:py-16 py-6 md:mb-6 px-4 lg:px-12">
       <div data-aos="fade-up" data-aos-duration="2000">
         <h2 className="text-black text-[26px] md:text-[40px] text-center font-bold  mb-3 leading-9">
           Our

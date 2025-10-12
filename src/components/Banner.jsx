@@ -12,7 +12,7 @@ const Banner = () => {
     return <Loading />;
   }
   return (
-    <div className="lg:mt-20 mt-12 py-12">
+    <div className="lg:mt-20 mt-12 py-12 px-4 lg:px-12">
       <div className="flex flex-col lg:flex-row md:items-center text-left">
         {/* Text */}
         <div
