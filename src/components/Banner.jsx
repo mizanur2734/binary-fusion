@@ -39,7 +39,7 @@ const Banner = () => {
             <button className="btn bg-green-600 text-white px-7 py-6 text-[16px]">
               Our Projects
             </button>
-            <button className="btn hover:bg-green-600 bg-white text-green-600 border border-green-600 px-7 py-6 text-[16px]">
+            <button className="btn hover:bg-green-600 bg-white hover:text-white text-green-600 border border-green-600 px-7 py-6 text-[16px]">
              About Us
             </button>
           </div>
